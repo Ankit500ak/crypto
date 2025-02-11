@@ -107,7 +107,7 @@ This project fetches and analyzes live cryptocurrency data for the top 50 crypto
 
 2. Run the analyzer:
    ```
-   python crypto_analyzer.py
+   python crypto.py
    ```
 
 ## Output
