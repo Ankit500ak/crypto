@@ -78,3 +78,48 @@ The system is designed to be:
 - Current: 5-minute update frequency
 - Comprehensive: Coverage of top 50 cryptocurrencies
 - User-friendly: Clear Excel-based presentation
+
+
+# Cryptocurrency Data Analyzer
+
+This project fetches and analyzes live cryptocurrency data for the top 50 cryptocurrencies by market capitalization. It creates a live-updating Excel sheet with price data and analysis.
+
+## Features
+
+- Fetches live data from CoinGecko API
+- Updates automatically every 5 minutes
+- Tracks key metrics including:
+  - Current Price (USD)
+  - Market Capitalization
+  - 24-hour Trading Volume
+  - Price Change (24-hour percentage)
+- Provides real-time analysis:
+  - Top 5 cryptocurrencies by market cap
+  - Average price of top 50 cryptocurrencies
+  - Highest and lowest 24-hour price changes
+
+## Setup
+
+1. Install required packages:
+   ```
+   pip install -r requirements.txt
+   ```
+
+2. Run the analyzer:
+   ```
+   python crypto_analyzer.py
+   ```
+
+## Output
+
+The script generates an Excel file named `crypto_data_live.xlsx` with three sheets:
+- Live Data: Current cryptocurrency data
+- Analysis: Key metrics and statistics
+- Top 5 by Market Cap: Detailed view of the top 5 cryptocurrencies
+
+## Notes
+
+- The Excel file updates every 5 minutes automatically
+- Press Ctrl+C to stop the program
+- Internet connection is required for live updates
+- Uses the free CoinGecko API (no API key required)
